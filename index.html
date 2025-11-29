@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Handwritten-looking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header class="nav">
+      <div class="logo">Personal Portfolio</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home" class="page-section home-section">
+        <div class="home-content">
+          <div>
+            <h1>Hi, my name is Mugdha</h1>
+            <p class="tagline">Aspiring Web Developer | IGDTUW CSE'29</p>
+          </div>
+
+          <!-- Hero photo -->
+          <div class="home-illustration single-card" aria-hidden="false">
+            <div class="photo-frame">
+              <img
+                src="assets/Hero Image.png"
+                alt="Hero photo"
+                class="hero-single-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT me -->
+      <section id="about" class="page-section about container">
+        <div class="about-inner">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              I am a first-year Computer Science student with a strong interest
+              in frontend development and visual design. I enjoy creating
+              interfaces that balance clarity, aesthetics, and user experience.
+              Currently, I'm sharpening my technical foundations by learning
+              HTML, CSS, and JavaScript, and applying them to build responsive,
+              thoughtful web pages.
+            </p>
+
+            <p>
+              Along with development, I actively work on improving my
+              problem-solving skills by practicing DSA on platforms like
+              LeetCode and GFG. This combination of design thinking and
+              structured problem solving helps me approach projects with
+              creativity and technical depth.
+            </p>
+          </div>
+
+          <!-- About me image -->
+          <figure class="about-image" aria-hidden="false">
+            <img src="assets/laptop gif.gif" alt="About me" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="page-section">
+        <h2>Skills</h2>
+        <div class="skill-tags">
+          <span>Data Structures and Algorithms</span>
+          <span>Git</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <p>
+          I'm developing a strong foundation in both design and development by
+          building my skills in frontend development with HTML, CSS and
+          JavaScript, while also improving my problem-solving through regular
+          DSA practice. I enjoy creating clean visuals, balanced layouts, and
+          creating interfaces that feel light and intentional. I'm constantly
+          learning and open to collaborating on projects or internships that
+          help me grow as a developer.
+        </p>
+
+        <div class="skill-logos">
+          <img src="assets/lc.png" alt="LeetCode logo" class="skill-logo" />
+          <img
+            src="assets/gfg.jpeg"
+            alt="GeeksforGeeks logo"
+            class="skill-logo"
+          />
+          <img src="assets/htmlw.png" alt="HTML5 logo" class="skill-logo" />
+          <img src="assets/css.png" alt="CSS3 logo" class="skill-logo" />
+          <img src="assets/js.png" alt="JavaScript logo" class="skill-logo" />
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="page-section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-tape tape-left"></div>
+            <div class="project-tape tape-right"></div>
+            <h3>Netflix clone</h3>
+            <p>
+              A responsive clone of the Netflix landing page with hover effects
+              and custom cards.
+            </p>
+            <ul>
+              <li>HTML / CSS / JavaScript</li>
+              <li>Responsive layout</li>
+            </ul>
+            <a href="#" class="project-link">view project ↗</a>
+          </article>
+          <article class="project-card">
+            <div class="project-tape tape-left"></div>
+            <div class="project-tape tape-right"></div>
+            <h3>to-do sketchpad</h3>
+            <p>
+              A to-do list that looks like a torn notebook page with hand-drawn
+              checkboxes.
+            </p>
+            <ul>
+              <li>LocalStorage</li>
+              <li>Custom animations</li>
+            </ul>
+            <a href="#" class="project-link">view project ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="page-section">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div>
+              <h3>IGDTUW B.Tech in CSE</h3>
+              <p>• 2025 – 29</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div>
+              <h3>
+                M.L. Khanna D.A.V. Public School Dwarka, New Delhi - 110059
+              </h3>
+              <p>• 2011 – 25</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="page-section">
+        <div class="contact-inner">
+          <h2 class="contact-title">Contact Me</h2>
+          <hr class="title-rule" />
+          <p class="contact-sub">
+            Got a project or just want to say hi? Leave a note.
+          </p>
+
+          <form class="contact-box" id="contact-form" novalidate>
+            <label class="field-label">
+              <span>name</span>
+              <input class="text-input" type="text" name="name" required />
+            </label>
+
+            <label class="field-label">
+              <span>email</span>
+              <input class="text-input" type="email" name="email" required />
+            </label>
+
+            <label class="field-label full">
+              <span>message</span>
+              <textarea
+                class="text-area"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </label>
+
+            <div class="box-bottom">
+              <button class="send-btn" type="submit">
+                <span>send</span>
+                <span class="icon">✉️</span>
+              </button>
+            </div>
+          </form>
+
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER SECTION-->
+    <footer class="footer">
+      <p>Designed &amp; developed by Mugdha</p>
+      <p>© 2025 Mugdha. All rights reserved.</p>
+      <p>
+        I’m keen to collaborate on coding projects, explore internships, and
+        contribute to tech communities. Feel free to connect.
+      </p>
+      <p class="footer-links">
+        <a href="https://www.linkedin.com/in/mugdha-kumar/" target="_blank"
+          >LinkedIn</a
+        >
+        |
+        <a href="https://github.com/mugdhakumar0803-alt" target="_blank"
+          >GitHub</a
+        >
+        |
+        <a href="mailto:mugdhakumar0803@gmail.com">Gmail</a>
+      </p>
+    </footer>
+
+    <script>
+      // smooth scrolling for nav links
+      const navLinks = document.querySelectorAll("header nav a");
+      const sections = document.querySelectorAll(".page-section");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          const target = document.querySelector(link.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+      // highlight active section while scrolling
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 140;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // fake submit for contact form (no backend yet)
+      const form = document.getElementById("contact-form");
+      const message = document.getElementById("form-message");
+
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          if (message) {
+            message.textContent =
+              "thanks for your message! (this is a demo 🙂)";
+          }
+          form.reset();
+        });
+      }
+    </script>
+  </body>
+</html>
